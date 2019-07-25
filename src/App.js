@@ -28,7 +28,7 @@ class App extends Component {
     return this.state.quotes[this.state.selectedQuoteIndex];
   }
 
-  selectedQuoteIndex() {
+  generateNewQuoteIndex() {
     if (!this.state.quotes.length) {
       return;
     } 
@@ -38,7 +38,7 @@ class App extends Component {
 
 
   assignNewQuoteIndex() {
-    this.setState({ selectedQuoteIndex: this.selectedQuoteIndex() });
+    this.setState({ selectedQuoteIndex: this.generateNewQuoteIndex() });
   }
 
   render() {
