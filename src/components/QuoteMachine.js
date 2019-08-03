@@ -20,7 +20,7 @@ const QuoteMachine = (props) => (
             <IconButton
                 id="tweet-quote"
                 target="_blank"
-                href={`https://twitter.com/intent/tweet?text=${props.selectedQuote.quote}&hashtags=psifon`}
+                href={encodeURI(`https://twitter.com/intent/tweet?text=${props.selectedQuote.quote}&hashtags=psifon`)}
             >
                 <FontAwesomeIcon icon={faTwitter} size="md"></FontAwesomeIcon>
             </IconButton>
